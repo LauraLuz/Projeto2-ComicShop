@@ -9,7 +9,9 @@
 body{
     background-color: blue;
 }
-
+p{
+    margin: 1vw;
+}
 /* Header */
 header .container-header{
     display: flex;
@@ -33,21 +35,27 @@ header .container-header h1, .container-header h2{
 header .container-header h2{
     font-size: 1.2em;
     margin-top: 10vh;
-    width: 30vh;
+    width: 35vh;
 }
+
+/* Manu Nav-bar */
 header nav{
     position: sticky;
     margin: 0% 1% 1% 1%;
-    height: 30px;
-    background-color: blueviolet;
+    height: 3em;
     bottom: 0em;
-    
+    padding: 1em;
+    background-color: blueviolet;
 }
 header nav ul li{
     display: inline;
 }
 header nav ul li a{
     text-decoration: none;
+    color: white;
+}
+.nav-item{
+    float: right;
 }
 
 /* Main */
@@ -56,8 +64,9 @@ header nav ul li a{
     width: 100%;
 }
 .main .container-section{
-    width: 69%;
+    width: 67%;
     margin: 1%;
+
 }
 img{
     width: 100%;
@@ -65,14 +74,35 @@ img{
 .container-section, .container-aside{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 .container-aside{
-    width: 28%;
+    width: 30%;
 }
 section{
     background-color: white;
     margin-bottom: 1%;
+    margin-top: 0%;
+    padding: 2.5vw;
+}
+/* Fale Conosco */
+.contact input[type="text"], 
+.contact input[type="email"]{
+    display: inline-block;
+    margin: 5px 0;
+    width: 100%;
     padding: 10px;
+    border-radius: 5px;
+}
+.submit input[type="submit"] {
+    margin: 5px 0;
+    width: 25%;
+    padding: 10px;
+    font-size: 1vw;
+    border-radius: 5px;
+    background-color: #0da8e6;
+    color: #fff;
+    cursor: pointer;
 }
 /* Footer */
 footer{
@@ -80,10 +110,11 @@ footer{
     text-align: center;
     align-items: center;
     color: white;
-    height: 50px;
+    height: 60px;
     margin: 1%;
 }
 footer p{
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  color: #fff;
+  padding-top: 20px;
 }
