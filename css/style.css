@@ -37,7 +37,6 @@ header .container-header h2{
     margin-top: 10vh;
     width: 35vh;
 }
-
 /* Manu Nav-bar */
 header nav{
     position: sticky;
@@ -64,7 +63,7 @@ header nav ul li a{
     width: 100%;
 }
 .main .container-section{
-    width: 67%;
+    width: 60%;
     margin: 1%;
 }
 img{
@@ -76,11 +75,18 @@ img{
     justify-content: space-evenly;
 }
 .container-aside{
-    width: 30%;
+    width: 37%;
+
+}
+.container-aside section{
+    margin-bottom: 1%;
+}
+.miniaturas-marvel{
+    margin-bottom: 1%;
 }
 section{
     background-color: white;
-    margin-bottom: 1%;
+    margin-bottom: 0%;
     margin-top: 0%;
     padding: 2.5vw;
 }
@@ -116,4 +122,28 @@ footer p{
   text-align: center;
   color: #fff;
   padding-top: 20px;
+}
+
+/* @media querys */
+@media screen and (max-width: 800px){
+    main{
+        flex-direction: column;
+    }
+    .main .container-section{
+        width: 98%;
+    }
+    .main .container-aside{
+        width: 98%;
+        margin-left: 1%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .main .container-section{
+        width: 98%;
+    }
+    .main .container-aside{
+        width: 98%;
+        margin-left: 1%;
+    }
 }
